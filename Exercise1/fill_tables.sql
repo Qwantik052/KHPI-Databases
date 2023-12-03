@@ -15,7 +15,7 @@ INSERT INTO deadline (course_id, date, type)
 VALUES (3, CURRENT_DATE - INTERVAL '10 days', 1), (5, CURRENT_DATE + INTERVAL '14 days', 0), 
 (1, CURRENT_DATE - INTERVAL '2 month', 0), (1, CURRENT_DATE - INTERVAL '2 day', 1), (4, CURRENT_DATE + INTERVAL '1 day', 1);
 
-INSERT INTO	mark (student_id, deadline_id, value)
+INSERT INTO mark (student_id, deadline_id, value)
 VALUES (1, 1, 84), (1, 2, 96), (3, 1, 70), (5, 2, 100), (5, 4, 100);
 
 INSERT INTO sgroup (name)
