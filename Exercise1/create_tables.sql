@@ -1,6 +1,6 @@
 CREATE TABLE course (course_id SERIAL PRIMARY KEY, name VARCHAR(100) NOT NULL);
 
-CREATE TABLE deadline ( deadline_id SERIAL PRIMARY KEY, course_id INT, date date NOT NULL, type INT NOT NULL);
+CREATE TABLE deadline (deadline_id SERIAL PRIMARY KEY, course_id INT, date date NOT NULL, type INT NOT NULL);
 
 CREATE TABLE mark (student_id INT, deadline_id INT, value INT NOT NULL);
 
