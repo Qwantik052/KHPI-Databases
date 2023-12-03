@@ -8,10 +8,10 @@ DROP CONSTRAINT IF EXISTS fk_mark_deadline;
 ALTER TABLE student
 DROP CONSTRAINT IF EXISTS fk_student_group;
 
-INSERT INTO course 	(name)
+INSERT INTO course (name)
 VALUES ('Physics'), ('Algorithms'), ('Mathematical Analysis'), ('Software Project'), ('Distributed systems');
 
-INSERT INTO	deadline (course_id, date, type)
+INSERT INTO deadline (course_id, date, type)
 VALUES (3, CURRENT_DATE - INTERVAL '10 days', 1), (5, CURRENT_DATE + INTERVAL '14 days', 0), 
 (1, CURRENT_DATE - INTERVAL '2 month', 0), (1, CURRENT_DATE - INTERVAL '2 day', 1), (4, CURRENT_DATE + INTERVAL '1 day', 1);
 
